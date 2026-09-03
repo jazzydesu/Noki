@@ -1,0 +1,41 @@
+{
+  "latitude": 37.7749,
+  "longitude": -122.4194,
+  "generationtime_ms": 0.12,
+  "utc_offset_seconds": -25200,
+  "timezone": "America/Los_Angeles",
+  "timezone_abbreviation": "PDT",
+  "elevation": 18.0,
+  "hourly_units": {
+    "time": "iso8601",
+    "cloud_cover": "%",
+    "cloud_cover_low": "%",
+    "cloud_cover_mid": "%",
+    "cloud_cover_high": "%",
+    "relative_humidity_2m": "%",
+    "visibility": "m",
+    "precipitation_probability": "%"
+  },
+  "hourly": {
+    "time": [
+      "2026-08-19T19:00",
+      "2026-08-19T20:00",
+      "2026-08-19T21:00"
+    ],
+    "cloud_cover": [50, 95, 0],
+    "cloud_cover_low": [10, 80, 0],
+    "cloud_cover_mid": [60, 10, 0],
+    "cloud_cover_high": [60, 10, 0],
+    "relative_humidity_2m": [45, 85, 20],
+    "visibility": [20000.0, 5000.0, 20000.0],
+    "precipitation_probability": [0, 75, 0]
+  },
+  "daily_units": {
+    "time": "iso8601",
+    "sunset": "iso8601"
+  },
+  "daily": {
+    "time": ["2026-08-19"],
+    "sunset": ["2026-08-19T19:00"]
+  }
+}

@@ -1,0 +1,78 @@
+.welcome-shell {
+  min-height: calc(100svh - 96px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 48px 24px;
+  animation: route-arrive 300ms ease-out both;
+}
+
+.welcome-disc {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 28px;
+  background: conic-gradient(from 140deg, var(--c-lavender), var(--c-blush), var(--rose-gold), var(--c-mint), var(--c-lavender));
+  border: 1px solid var(--rose-gold);
+  box-shadow: 0 0 0 8px rgba(255,255,255,.5), 0 16px 40px -12px var(--rose-gold-glow), inset 0 0 20px rgba(255,255,255,.6);
+  animation: holo-rotate 24s linear infinite;
+}
+
+.welcome-disc span {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--rose-gold-soft);
+}
+
+.welcome-shell h1 {
+  font-size: clamp(38px, 10vw, 58px);
+  max-width: 420px;
+}
+
+.welcome-copy {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 18px 0 0;
+}
+
+.welcome-actions { display: grid; gap: 10px; margin-top: 32px; max-width: 340px; }
+
+.welcome-primary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border: 0; border-radius: 99px; background: var(--ink); color: var(--cream);
+  padding: 16px 24px; font-weight: 700; font-size: 15px; cursor: pointer; min-height: 52px;
+  box-shadow: 0 10px 26px -10px rgba(43,37,48,.4);
+}
+
+.welcome-primary:disabled { opacity: .7; }
+
+.welcome-secondary {
+  border: 1px solid var(--rose-gold-soft); border-radius: 99px; background: rgba(255,255,255,.65);
+  color: var(--ink); padding: 14px 24px; font-weight: 600; font-size: 14px; cursor: pointer; min-height: 48px;
+}
+
+.welcome-points { list-style: none; margin: 36px 0 0; padding: 0; display: grid; gap: 12px; }
+.welcome-points li { display: flex; align-items: center; gap: 10px; color: var(--ink-soft); font-size: 13px; }
+.welcome-points .icon { color: var(--rose-gold); flex: 0 0 auto; }
+
+.welcome-skip { margin-top: 28px; color: var(--ink-muted); font: 500 12px 'DM Mono', monospace; }
+
+.welcome-error {
+  margin: 20px 0 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(240, 184, 200, 0.5);
+  border-radius: 12px;
+  background: rgba(240, 184, 200, 0.2);
+  color: #A3457A;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 400px;
+}

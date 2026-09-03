@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C8A0"/>
+      <stop offset="50%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#B88650"/>
+    </linearGradient>
+    <radialGradient id="discHolo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="28%" stop-color="#F5F1EA" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#D4A574" stop-opacity="0.6"/>
+      <stop offset="48%" stop-color="#C9A9DD" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#F0B8C8" stop-opacity="0.85"/>
+      <stop offset="90%" stop-color="#A8D8D0" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#D4A574" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="horizonGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D4A574" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#C9A9DD" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#discHolo)" stroke="url(#roseGold)" stroke-width="2"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1"/>
+  <circle cx="32" cy="32" r="9" fill="#2B2530"/>
+  <circle cx="32" cy="32" r="4" fill="#F5F1EA"/>
+  <path d="M 2 32 A 30 30 0 0 0 62 32 Z" fill="url(#horizonGlow)"/>
+</svg>

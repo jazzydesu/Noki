@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #2B2530;
+  background: #F5F1EA;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body, *, button, a, nav, [role='button'],
+.bottom-nav a, .bottom-nav button, .location-option, .location-result,
+.location-display, .save-button, .retry-button, .manual-entry-button,
+.welcome-primary, .welcome-secondary, .welcome-skip,
+.forecast-control-button, .settings-action, .saved-open, .saved-remove,
+.location-picker-close, .event-toggle button, .event-choice-list button,
+.tutorial-actions button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+button,
+a,
+[role='button'],
+input,
+textarea,
+select,
+nav {
+  touch-action: manipulation;
+}
+
+button,
+a,
+[role='button'],
+nav {
+  user-select: none;
+}
+
+button {
+  font: inherit;
+  transition: transform 120ms ease !important;
+}
+
+button:active {
+  transform: scale(0.96) !important;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(100, 76, 158, 0.9);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none !important;
+  }
+
+  button:active {
+    transform: none !important;
+  }
+}
