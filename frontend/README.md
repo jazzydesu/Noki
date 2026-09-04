@@ -2,7 +2,7 @@
 
 This React web UI is built for Noki, a sunset score service. It shows sunset and sunrise quality based on where you are. It uses live location data and a set of weather inputs.
 
-## 🚀 Get going
+## Get going
 
 ### Run on your machine
 
@@ -27,7 +27,7 @@ npm run dev
 # Start with Docker Compose
 docker-compose up --build
 ```\n
-## ✨ What it does
+## What it does
 
 ### Scoring method
 - It uses a 6-part check: cloud cover, mid and high cloud amount, low cloud near the horizon, humidity, visibility, precipitation. It also includes temperature-based color strength.
@@ -57,7 +57,7 @@ docker-compose up --build
 - **Clear Error Messages**: "Location access needs a secure connection - please search for your location manually instead"
 - **Automatic Picker**: Opens location search when geolocation fails
 
-## 🎯 Understanding the Scoring
+## Understanding the Scoring
 
 ### 6-Factor Analysis
 The app analyzes **six key factors** to determine sunset/sunrise quality:
@@ -78,7 +78,7 @@ The app analyzes **six key factors** to determine sunset/sunrise quality:
 - **30-49**: Fair - visible but not spectacular
 - **0-29**: Poor - limited color potential
 
-## 🔧 Technical Specifications
+## Technical Specifications
 
 ### Frontend Stack
 - **Framework**: React 19 with TypeScript
@@ -93,7 +93,7 @@ The app analyzes **six key factors** to determine sunset/sunrise quality:
 - **Weather Integration**: Open-Meteo API
 - **CORS**: Fully permissive for mobile access
 
-## 🚀 Performance Optimizations
+## Performance Optimizations
 
 ### Mobile-First Design
 - **Minimal Backdrop-Filter**: Reduced GPU usage for smooth scrolling
@@ -107,7 +107,7 @@ The app analyzes **six key factors** to determine sunset/sunrise quality:
 - **Linting**: Code quality enforcement
 - **Build Optimization**: Production-ready bundling
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -135,7 +135,7 @@ npm run dev
 3. **Test Frontend**: Visit `http://localhost:5173`
 4. **Mobile Test**: Use `http://192.168.x.x:5173` on phone
 
-## 📝 Development
+## Development
 
 ### Running Tests
 ```bash
@@ -183,8 +183,8 @@ npm run lint
 
 ---
 
-**Ready to explore the skies?** Start with the quick setup commands above and discover your perfect sunset moments! 🌅
+**Ready to explore the skies?** Start with the quick setup commands above and discover your perfect sunset moments!
 
 ---
 
-*Made with ❤️ by Jazzy (Rayan Ait jilali)*
+*Made with by Jazzy (Rayan Ait jilali)*
