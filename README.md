@@ -1,4 +1,4 @@
-# Noki — Sunset & Sunrise Quality Prediction App
+# Noki: Sunset & Sunrise Quality Prediction App
 
 I like sunsets, love 'em.
 
