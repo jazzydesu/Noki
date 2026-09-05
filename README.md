@@ -50,7 +50,7 @@ Maybe visibility is excellent.
 
 Or maybe the conditions are terrible and Noki tells you not to bother.
 
-That's pretty much it. maybe it can help you get ur silly self to catch some rays.
+That's pretty much it. maybe it can help you get ur silly butt to catch some rays.
 
 ## Features
 
