@@ -1,12 +1,9 @@
 # Noki — Sunset & Sunrise Quality Prediction App
 
-I like sunsets.
+I like sunsets, love 'em.
 
-Probably more than is reasonable.
 
-There is something about knowing that, for a few minutes, the sky can suddenly become completely different from what it was five minutes ago. Sometimes you get nothing. Sometimes you get the kind of sunset that makes you stop whatever you were doing.
-
-The annoying part is that you usually don't know which one you're getting until it's already happening.
+The annoying thing is you never know what sunset you're getting until it's already happening.
 
 So I made Noki.
 
@@ -26,7 +23,7 @@ It is trying to find the conditions that tend to make a beautiful sky possible.
 ![Preview 2](frontend/public/preview-2.png)
 ![Preview 3](frontend/public/preview-3.png)
 
-kinda cool right? :3
+kinda cool right? :3 yea the UI is inspired from an unreleased project by Kanye west (ye) called yandhi, it has a beautiful cover.
 
 ## What Noki Actually Does
 
@@ -53,7 +50,7 @@ Maybe visibility is excellent.
 
 Or maybe the conditions are terrible and Noki tells you not to bother.
 
-That's the idea.
+That's pretty much it. maybe it can help you get ur silly self to catch some rays.
 
 ## Features
 
@@ -66,13 +63,7 @@ That's the idea.
 
 ## Why I Made It
 
-This started from something much less complicated than "I wanted to build a weather application."
-
 I just really like sunsets.
-
-Especially the ones that make you think, holy shit, I'm glad I went outside.
-
-I've also spent enough time watching the sky change from one place to another to notice how inconsistent it can be. A perfectly ordinary evening can turn incredible because of a particular combination of clouds, humidity, visibility, and light.
 
 Eventually I started wondering whether those conditions could be recognized before the sunset actually happened.
 
