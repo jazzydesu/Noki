@@ -25,6 +25,14 @@ It is trying to find the conditions that tend to make a beautiful sky possible.
 
 kinda cool right? :3 yea the UI is inspired from an unreleased project by Kanye west (ye) called yandhi, it has a beautiful cover.
 
+## The Two Parts
+
+There is the terminal part — the Python backend (`sunset_score/`) that runs in a terminal, takes weather data, and produces the score. That is the engine.
+
+Then there is the actual app — the React frontend (`frontend/`) with CSS, UI design, mobile layout, and the interface people actually touch. That is what gets deployed. The terminal produces the prediction. The app makes it visible.
+
+Both exist. They are separate. They work together.
+
 ## What Noki Actually Does
 
 Noki takes several pieces of weather data that normally don't mean much on their own and puts them together into one prediction.
