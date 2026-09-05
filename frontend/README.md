@@ -21,9 +21,9 @@ Noki isn't just another weather app - it's your dedicated companion for capturin
 
 ## Preview Images
 
-![Noki Preview 1](public/preview-1.png)
-![Noki Preview 2](public/preview-2.png)
-![Noki Preview 3](public/preview-3.png)
+![Noki Preview 1](./frontend/public/preview-1.png)
+![Noki Preview 2](./frontend/public/preview-2.png)
+![Noki Preview 3](./frontend/public/preview-3.png)
 
 ## Get going
 
