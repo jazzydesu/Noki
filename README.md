@@ -1,6 +1,28 @@
-# Sunset Score
+# Noki - Sunset & Sunrise Quality Prediction App
 
-`sunset-score` provided by Jazzy (Rayan ait Jilali) is a Python application that predicts sunset quality for any location using forecast data from Open-Meteo's free weather API. It analyzes total cloud cover, mid and high cloud canvas layer structure, low cloud horizon obstruction, relative humidity, atmospheric visibility, precipitation risk, and temperature-based color intensity to generate an intuitive score from 0 to 100 alongside human-readable explanation notes. 
+Noki predicts sunset/sunrise quality using weather data. Get a 0-100 score with explanations.
+
+## Preview Images
+
+![Preview 1](frontend/public/preview-1.png)
+![Preview 2](frontend/public/preview-2.png)
+![Preview 3](frontend/public/preview-3.png)
+
+## Features
+- Real-time location
+- 6-factor analysis
+- Mobile optimized
+- No account needed
+
+## Quick Start
+```bash
+$env:PYTHONPATH="src"
+uvicorn sunset_score.api:app --reload
+```
+
+## Structure
+- `frontend/` - React app
+- `src/` - Python backend 
 
 ## Setup
 
