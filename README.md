@@ -33,7 +33,8 @@ This is the engine. It runs in a terminal. It takes weather data from Open-Meteo
 
 This is the deployed product. It has CSS, UI design, mobile layout, touch interactions, and the interface people actually use. It lives in `frontend/`. It connects to the backend but is a separate thing, ok?
 
-They are not the same. The terminal produces the prediction. The app displays it.
+They are not the same. The terminal produces the prediction. The app displays it. I am testing an apk version so stay tuned ;3
+
 
 ## What Noki Actually Does
 
