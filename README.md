@@ -27,11 +27,11 @@ kinda cool right? :3 yea the UI is inspired from an unreleased project by Kanye 
 
 ## The Terminal Tool (Python Backend)
 
-This is the engine. It runs in a terminal. It takes weather data from Open-Meteo, runs the scoring algorithm (`sunset_score/`), and outputs a 0-100 score with explanation notes. It is a command-line tool.
+This is the engine. It runs in a terminal. It takes weather data from Open-Meteo, runs the scoring algorithm (`sunset_score/`), and outputs a 0-100 score with explanation notes. It is a command-line tool, ok?
 
 ## The Actual App (React Frontend)
 
-This is the deployed product. It has CSS, UI design, mobile layout, touch interactions, and the interface people actually use. It lives in `frontend/`. It connects to the backend but is a separate thing.
+This is the deployed product. It has CSS, UI design, mobile layout, touch interactions, and the interface people actually use. It lives in `frontend/`. It connects to the backend but is a separate thing, ok?
 
 They are not the same. The terminal produces the prediction. The app displays it.
 
