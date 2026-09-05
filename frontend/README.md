@@ -19,6 +19,12 @@ Noki isn't just another weather app - it's your dedicated companion for capturin
 - **Privacy First**: No account required, all data stored locally
 - **Visual Feedback**: Color-coded scores with detailed explanations
 
+## Preview Images
+
+![Noki Preview 1](public/preview-1.png)
+![Noki Preview 2](public/preview-2.png)
+![Noki Preview 3](public/preview-3.png)
+
 ## Get going
 
 ### Run on your machine
@@ -43,7 +49,8 @@ npm run dev
 ```bash
 # Start with Docker Compose
 docker-compose up --build
-```\n
+```
+
 ## How Noki Works
 
 ### The 6-Factor Sunset & Sunrise Analysis
