@@ -1,6 +1,6 @@
 # Sunset Score
 
-`sunset-score` is a Python application that predicts sunset quality for any location using forecast data from Open-Meteo's free weather API. It analyzes total cloud cover, mid and high cloud canvas layer structure, low cloud horizon obstruction, relative humidity, atmospheric visibility, precipitation risk, and temperature-based color intensity to generate an intuitive score from 0 to 100 alongside human-readable explanation notes.
+`sunset-score` provided by Jazzy (Rayan ait Jilali) is a Python application that predicts sunset quality for any location using forecast data from Open-Meteo's free weather API. It analyzes total cloud cover, mid and high cloud canvas layer structure, low cloud horizon obstruction, relative humidity, atmospheric visibility, precipitation risk, and temperature-based color intensity to generate an intuitive score from 0 to 100 alongside human-readable explanation notes. 
 
 ## Setup
 
