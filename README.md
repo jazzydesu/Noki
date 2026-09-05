@@ -1,6 +1,24 @@
-# Noki - Sunset & Sunrise Quality Prediction App
+# Noki — Sunset & Sunrise Quality Prediction App
 
-Noki predicts sunset/sunrise quality using weather data. Get a 0-100 score with explanations.
+I like sunsets.
+
+Probably more than is reasonable.
+
+There is something about knowing that, for a few minutes, the sky can suddenly become completely different from what it was five minutes ago. Sometimes you get nothing. Sometimes you get the kind of sunset that makes you stop whatever you were doing.
+
+The annoying part is that you usually don't know which one you're getting until it's already happening.
+
+So I made Noki.
+
+Noki looks at weather conditions and tries to answer a very simple question:
+
+Is the sky going to be worth going outside for?
+
+It turns atmospheric conditions into a 0–100 quality score, then tells you what actually pushed the prediction up or down.
+
+It is not trying to mathematically define beauty. That would be stupid.
+
+It is trying to find the conditions that tend to make a beautiful sky possible.
 
 ## Preview Images
 
@@ -8,25 +26,85 @@ Noki predicts sunset/sunrise quality using weather data. Get a 0-100 score with 
 ![Preview 2](frontend/public/preview-2.png)
 ![Preview 3](frontend/public/preview-3.png)
 
+kinda cool right? :3
+
+## What Noki Actually Does
+
+Noki takes several pieces of weather data that normally don't mean much on their own and puts them together into one prediction.
+
+It looks at six factors:
+
+- Total cloud cover
+- Mid/high-level cloud structure
+- Low cloud cover near the horizon
+- Humidity
+- Visibility
+- Atmospheric timing and conditions
+
+The point is not simply to produce a number.
+
+If Noki gives you 85/100, you should be able to look at the result and understand why.
+
+Maybe there is enough high cloud to catch the light.
+
+Maybe the lower atmosphere is clear enough to leave the horizon visible.
+
+Maybe visibility is excellent.
+
+Or maybe the conditions are terrible and Noki tells you not to bother.
+
+That's the idea.
+
 ## Features
+
 - Real-time location
-- 6-factor analysis
-- Mobile optimized
-- No account needed
+- Six-factor sunset/sunrise analysis
+- 0–100 quality prediction
+- Explanations behind the prediction
+- Mobile-optimized interface
+- No account required
+
+## Why I Made It
+
+This started from something much less complicated than "I wanted to build a weather application."
+
+I just really like sunsets.
+
+Especially the ones that make you think, holy shit, I'm glad I went outside.
+
+I've also spent enough time watching the sky change from one place to another to notice how inconsistent it can be. A perfectly ordinary evening can turn incredible because of a particular combination of clouds, humidity, visibility, and light.
+
+Eventually I started wondering whether those conditions could be recognized before the sunset actually happened.
+
+So I made something to find out.
+
+Noki is basically that question turned into a project:
+
+Can I look at the atmosphere, make a prediction, and know whether tonight might be one of those nights?
+
+Sometimes it'll be wrong.
+
+That's fine.
+
+The prediction is only half the point.
+
+The other half is going outside and finding out.
+
+## Project Structure
+
+- `frontend/` - React app
+- `src/` - Python backend
 
 ## Quick Start
+
 ```bash
 $env:PYTHONPATH="src"
 uvicorn sunset_score.api:app --reload
 ```
 
-## Structure
-- `frontend/` - React app
-- `src/` - Python backend 
-
 ## Setup
 
-1. **Create and activate a virtual environment:**
+1. Create and activate a virtual environment:
 
    On macOS/Linux:
    ```bash
@@ -40,12 +118,12 @@ uvicorn sunset_score.api:app --reload
    .\venv\Scripts\Activate.ps1
    ```
 
-2. **Install dependencies:**
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Set pythonpath (or install in editable mode):**
+3. Set pythonpath:
 
    On macOS/Linux:
    ```bash
@@ -59,45 +137,36 @@ uvicorn sunset_score.api:app --reload
 
 ## Run the API Server
 
-Start the FastAPI server from the project root:
-
 ```powershell
 $env:PYTHONPATH="src"
 uvicorn sunset_score.api:app --reload
 ```
 
-Check that the server is running:
-
+Check:
 ```bash
 curl http://127.0.0.1:8000/health
 ```
 
-Request a sunset score:
-
+Request a score:
 ```bash
 curl "http://127.0.0.1:8000/score?lat=37.7749&lon=-122.4194"
 ```
 
-An invalid latitude returns a validation error:
-
+Invalid latitude:
 ```bash
 curl "http://127.0.0.1:8000/score?lat=91&lon=-122.4194"
 ```
 
-Score responses are cached locally for 60 minutes by rounded location. The
-cache is stored in `sunset_score.db`, which is created automatically and is
-safe to delete whenever you want to clear it.
+Cache is stored in `sunset_score.db` (60 minutes, safe to delete).
 
-## How to Run
-
-Pass latitude and longitude as command-line arguments to the CLI module:
+## CLI Usage
 
 ```bash
 python -m sunset_score.cli 37.7749 -122.4194
 ```
 
-Example Output:
-```text
+Example output:
+```
 Sunset Quality Prediction
 -------------------------
 Sunset Time: 7:52 PM
@@ -111,9 +180,7 @@ Notes:
  - Excellent visibility (20.0 km)
 ```
 
-## How to Run Tests
-
-Run `pytest` from the project root:
+## Tests
 
 ```bash
 pytest
