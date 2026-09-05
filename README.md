@@ -13,7 +13,7 @@ Is the sky going to be worth going outside for?
 
 It turns atmospheric conditions into a 0–100 quality score, then tells you what actually pushed the prediction up or down.
 
-It is not trying to mathematically define beauty. That would be stupid.
+It is not trying to mathematically define beauty. That would be dumb, right?
 
 It is trying to find the conditions that tend to make a beautiful sky possible.
 
@@ -70,6 +70,10 @@ That's pretty much it. maybe it can help you get ur silly butt to catch some ray
 - Explanations behind the prediction
 - Mobile-optimized interface
 - No account required
+## Privacy
+Everything is in your device, no accounts nothing, nada.
+
+That's pretty much it the app is too simple to be unprivate :b
 
 ## Why I Made It
 
