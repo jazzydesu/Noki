@@ -1,6 +1,23 @@
-# Noki Frontend - Mobile App for Sunset Scores
+# Noki - Sunset & Sunrise Quality Prediction App
 
-This React web UI is built for Noki, a sunset score service. It shows sunset and sunrise quality based on where you are. It uses live location data and a set of weather inputs.
+Noki is your personal sunset/sunrise quality predictor that tells you exactly how beautiful your next twilight moment will be. Whether you're planning a romantic evening walk, a photography session, or just want to know if today's sunset will be worth watching, Noki gives you the real answer: a simple 0-100 score with detailed explanations of why.
+
+## What Makes Noki Special?
+
+Noki isn't just another weather app - it's your dedicated companion for capturing the perfect moments when the sky transforms into a masterpiece. Imagine having a crystal ball that tells you exactly how stunning today's sunset will be, with scientific precision backed by real-time meteorological data.
+
+**What sets Noki apart:**
+- **Scientific Accuracy**: Powered by Open-Meteo's comprehensive weather data
+- **Mobile-First Design**: Built specifically for touchscreens and on-the-go lifestyle
+- **Privacy Guaranteed**: No accounts, no tracking, everything stays on your device
+- **Real Results**: Not just predictions, but explanations of why that score matters
+
+**Key Features:**
+- **Real-time Location Detection**: Automatically finds your position or allows manual search
+- **6-Factor Analysis**: Cloud cover, mid/high clouds, low horizon clouds, humidity, visibility, precipitation, and temperature
+- **Mobile Optimized**: Touch-friendly interface designed for smooth scrolling and performance
+- **Privacy First**: No account required, all data stored locally
+- **Visual Feedback**: Color-coded scores with detailed explanations
 
 ## Get going
 
@@ -27,35 +44,35 @@ npm run dev
 # Start with Docker Compose
 docker-compose up --build
 ```\n
-## What it does
+## How Noki Works
 
-### Scoring method
-- It uses a 6-part check: cloud cover, mid and high cloud amount, low cloud near the horizon, humidity, visibility, precipitation. It also includes temperature-based color strength.
-- You get a simple score from 0 to 100.
-- You also see reasons behind the score, not just the number.
-- It includes a 5-day view, with a short trend look and a best-day pick.
+### The 6-Factor Sunset & Sunrise Analysis
+Noki uses a sophisticated 6-part scoring system to predict sunset and sunrise quality:
 
-### Mobile experience
-- Location is handled automatically at first. If that fails, you can search by hand.
-- It watches for secure context needs on mobile and gives guidance for HTTPS.
-- The layout is made for taps. Animations stay smooth during use.
-- Scrolling stays fast. It uses less backdrop-filter than you might expect.
+- **Cloud Cover**: Overall sky coverage (0-10 points)
+- **Mid/High Cloud Canvas**: Color scattering potential from altocumulus and cirrus clouds (0-25 points)
+- **Low Cloud Horizon**: Horizon clearance for direct sun rays (0-20 points)
+- **Relative Humidity**: Atmospheric clarity and moisture balance (0-10 points)
+- **Visibility**: Air quality and viewing distance (0-10 points)
+- **Temperature-Based Color**: Optimal color development range (15°C-25°C) (0-15 points)
 
-### Visual style
-- The score uses a hologram-like display with a CD feel.
-- Colors shift based on how high or low the score is.
-- Animations are kept light and polished, with small transitions.
-- The design adjusts for phones and larger screens.
+### What You'll Get
+- **Simple 0-100 Score**: Easy-to-understand quality rating
+- **Detailed Explanations**: Why you got that score, not just the number
+- **5-Day Forecast**: Trend analysis with best-day highlighting
+- **Real-Time Updates**: Live scoring as weather conditions change
 
-### Privacy
-- No sign-in needed. The app does not ask you to create an account.
-- All shown data comes from the weather inputs and your selected location.
+### Mobile Experience
+- **Smart Location Detection**: Automatic GPS with manual search fallback
+- **Secure Context Handling**: HTTPS guidance for mobile browsers
+- **Touch-Optimized Interface**: Smooth scrolling and responsive design
+- **Performance First**: Minimal backdrop-filter for fast mobile scrolling
 
-### Geolocation Features
-- **Auto-Detection**: Automatically finds your location
-- **Smart Fallback**: Shows manual search when geolocation is blocked
-- **Clear Error Messages**: "Location access needs a secure connection - please search for your location manually instead"
-- **Automatic Picker**: Opens location search when geolocation fails
+### Privacy & Security
+- **No Account Required**: Everything works without sign-in
+- **Local Data Storage**: All information stays on your device
+- **Secure Error Messages**: Clear guidance when location access needs HTTPS
+- **Manual Entry Always Available**: Even when geolocation fails
 
 ## Understanding the Scoring
 
