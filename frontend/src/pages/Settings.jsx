@@ -74,7 +74,7 @@ function Settings() {
             <b>Private by design.</b> No accounts, no tracking, no data collection. Everything
             stays on your device; weather requests go straight to the forecast provider.
           </span>
-          <span>Made by Jazzy (Rayan Ait Jilali)- September version
+          <span>Made by Jazzy (Rayan Ait Jilali)
             
           </span>
         </div>
