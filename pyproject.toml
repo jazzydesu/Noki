@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "noki-v2"
+version = "0.1.0"
+description = "Machine learning pipeline that predicts sunset visual quality from atmospheric forecast data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Noki v2 Team", email = "team@noki-v2.org"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.dependencies]
+xarray = "*"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+xgboost = "*"
+shap = "*"
+ephem = "*"
+loguru = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+pyarrow = "*"
+huggingface-hub = "*"
+ocf_blosc2 = "*"
+jupyter = "*"
+matplotlib = "*"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+    "ipykernel",
+]
+
+[tool.hatch.build.targets.wheel]
+include = ["src/", "docs/", "data/", "notebooks/", "tests/", "*.md"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W"]
+
+[tool.mypy]
+python-version = "3.11"
+strict = true
